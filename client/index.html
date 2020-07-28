@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta cherset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Meower</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="/client//styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Meower</h1>
+    </header>
+    <main>
+      <form>
+        <label for="name">Name</label>
+        <input class="form" type="text" id="name" name="name" />
+        <label for="content">Mew</label>
+        <textarea
+          class="form"
+          type="text"
+          id="content"
+          name="content"
+        ></textarea>
+        <button type="submit">SEND YOUR MEW</button>
+      </form>
+      <div class="loading">
+        <img src="loading.gif" alt="please stand by" />
+      </div>
+      <div class="mews"></div>
+    </main>
+    <script src="client.js"></script>
+  </body>
+</html>

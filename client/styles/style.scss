@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+
+// setup
+
+$main-font: "Raleway", sans-serif;
+$number-font: "Oswald", sans-serif;
+
+@mixin flexBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+// general code
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+// page
+
+body {
+  font-family: $main-font;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  @include flexBox();
+}
+
+main {
+  width: 100%;
+  @include flexBox();
+}
+
+// form
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 0 20%;
+
+  input {
+    height: 30px;
+    padding: 0 5px;
+  }
+
+  textarea {
+    height: 60px;
+    padding: 5px;
+  }
+
+  button {
+    width: 100%;
+    font-family: $main-font;
+  }
+}
+
+.form {
+  font-family: $main-font;
+  width: 290px;
+  margin-bottom: 20px;
+}
+
+// content
+
+.mews {
+  width: 100%;
+
+  div {
+    width: 80%;
+    margin: 0 10%;
+    padding: 10px 0;
+    border-bottom: 1px solid #999;
+  }
+
+  small {
+    font-family: $number-font;
+  }
+}
